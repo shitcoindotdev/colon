@@ -83,7 +83,9 @@ export default function Home() {
 				DexsLink={'#'}
 				DextLink={'#'}
 				TgLink={'#'}
-				className={'fixed bottom-4 z-20 rounded-full bg-white/50 px-4 py-2 backdrop-blur-sm md:mx-auto'}
+				className={
+					'fixed bottom-4 z-20 rounded-full bg-white/50 px-4 py-2 shadow-md backdrop-blur-sm md:mx-auto'
+				}
 			/>
 		</main>
 	)
