@@ -16,7 +16,7 @@
 }
 
 .gradient-bg {
-	background: linear-gradient(to bottom right, #f5f5dc, #d9b99b);
+	background: linear-gradient(to bottom right, #222, #000);
 }
 
 @keyframes fadeInUp {

@@ -11,6 +11,8 @@ import colon3 from '/public/kabosumouth.jpg'
 import colon4 from '/public/kabosusfather.jpg'
 import colon5 from '/public/colondog.jpg'
 import colon6 from '/public/webscreen.png'
+import dogefather from '/public/dogefather.webp'
+import dogefathermobile from '/public/dogefathermobile.webp'
 import pumppill from '/public/logo.webp'
 import Typewriter from '@/components/Typewriter'
 
@@ -21,8 +23,10 @@ const pumpLink = 'https://pump.fun/board'
 export default function Home() {
 	return (
 		<main
-			className={`gradient-bg relative flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden py-6 text-[20px] font-semibold sm:px-8 ${nunito.className}`}
+			className={`relative flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden text-[20px] font-semibold text-white sm:px-8 ${nunito.className}`}
 		>
+			<Image className="fixed z-[-2] h-auto w-full" src={dogefathermobile} />
+			<div className="gradient-bg fixed z-[-1] h-full w-full opacity-60"></div>
 			<div className="relative w-full max-w-[900px] items-center justify-center">
 				<Image className="z-0 h-auto w-full" src={banner} />
 				<div className="absolute top-1/4 w-full">
@@ -48,7 +52,7 @@ export default function Home() {
 			</div>
 			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
-					Meet <span className="font-bold italic">Colon</span>, the father of the world famous shiba-inu{' '}
+					Meet <span className="font-bold italic">Colon</span>, the DogeFather of the world famous shiba-inu{' '}
 					<span className="font-bold italic">Kabosu</span>, also known as{' '}
 					<span className="font-bold italic">Doge</span>, the mascot of DogeCoin 🪙🐕
 				</p>
@@ -57,7 +61,7 @@ export default function Home() {
 			<a
 				target="_blank"
 				href={pumpLink}
-				className="flex items-center justify-center gap-2 rounded-xl bg-[#A56E3A]/50 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg backdrop-blur-sm"
+				className="flex items-center justify-center gap-2 rounded-xl bg-black/75 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg backdrop-blur-sm"
 			>
 				Buy $colon{' '}
 				<span>
@@ -68,7 +72,7 @@ export default function Home() {
 			<a
 				target="_blank"
 				href="https://kabosu112.exblog.jp/9330818/"
-				className="pointer-cursor flex flex-col items-center justify-center rounded-xl bg-white/20 p-4"
+				className="pointer-cursor relative flex flex-col items-center justify-center rounded-xl bg-white/20 p-4 backdrop-blur-sm"
 			>
 				<h3 className="text-center italic">
 					"Hello everyone. My name is Colon.
@@ -76,8 +80,9 @@ export default function Home() {
 					Today, I'm here to teach my daughter, Kabosu, how to walk properly."
 				</h3>
 				<Image className="mt-4 w-[400px] max-w-[69%] rounded-lg shadow-lg" src={colon4} />
+				<p className="absolute -bottom-1 text-[16px]">source</p>
 			</a>
-			<p className="pb-20 text-[16px] font-semibold sm:text-[20px]">Stay up to date with $COLON 🐕</p>
+			<p className="pb-20 text-[16px] font-bold sm:text-[20px] lg:pb-28">Stay up to date with $COLON 🐕</p>
 			<Links
 				xLink={'#'}
 				DexsLink={'#'}
