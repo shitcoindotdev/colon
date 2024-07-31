@@ -30,7 +30,7 @@ export default function Home() {
 					<Typewriter
 						className={'-mt-3 text-center text-[16px] font-bold italic md:-mt-4 md:text-[25px]'}
 						text={'The DogeFather'}
-						speed={42}
+						speed={69}
 					/>
 				</div>
 			</div>
