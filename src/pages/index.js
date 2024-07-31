@@ -24,7 +24,7 @@ export default function Home() {
 		<main
 			className={`relative flex min-h-screen w-full flex-col items-center overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 md:gap-40 ${nunito.className}`}
 		>
-			<Image className="fixed z-[-2] h-dvh w-full md:hidden" src={dogefathermobile} />
+			<Image className="fixed z-[-2] h-screen md:hidden" src={dogefathermobile} />
 			<Image className="fixed z-[-2] hidden h-auto w-full md:block" src={dogefather} />
 			<div className="gradient-bg fixed z-[-1] h-full w-full opacity-60"></div>
 			<section className="relative flex min-h-screen flex-col items-center gap-10">
