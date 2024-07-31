@@ -23,7 +23,7 @@ const pumpLink = 'https://pump.fun/board'
 export default function Home() {
 	return (
 		<main
-			className={`relative flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden text-[20px] font-semibold text-white sm:px-8 ${nunito.className}`}
+			className={`relative flex min-h-screen w-full flex-col items-center gap-10 overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 ${nunito.className}`}
 		>
 			<Image className="fixed z-[-2] h-auto w-full" src={dogefathermobile} />
 			<div className="gradient-bg fixed z-[-1] h-full w-full opacity-60"></div>
