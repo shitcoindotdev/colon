@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RotateOnHover.css */
+.rotating-element {
+	transition: transform 0.3s ease; /* Smooth transition */
+	cursor: pointer;
+}
+
+.rotating-element:hover {
+	transform: rotate(10deg) scale(1.1); /* Rotate 10 degrees on hover */
+}
+
+.gradient-bg {
+	background: linear-gradient(to bottom right, #f5f5dc, #d9b99b);
+}
