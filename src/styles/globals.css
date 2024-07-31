@@ -29,3 +29,7 @@
 		transform: translateY(0); /* Ends at its normal position */
 	}
 }
+
+.shiba-inu-gradient {
+	background: linear-gradient(to bottom right, #e8d5b580, #00000080);
+}

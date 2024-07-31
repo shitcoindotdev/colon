@@ -25,7 +25,7 @@ function Links({ className, xLink, TgLink, DexsLink, DextLink }) {
 					/>
 				</a>
 			</li>
-			<li className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-[#A56E3A] lg:h-[60px] lg:w-[60px]">
+			<li className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-black lg:h-[60px] lg:w-[60px]">
 				<a target="_blank" href={DexsLink}>
 					<svg
 						className="h-auto w-[20px] sm:h-14 lg:w-[32px]"
