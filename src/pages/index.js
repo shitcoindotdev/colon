@@ -17,7 +17,7 @@ import pumppill from '/public/logo.webp'
 import Typewriter from '@/components/Typewriter'
 
 const nunito = Nunito({ subsets: ['latin'] })
-const contractAddress = 'dummyaddress'
+const contractAddress = 'EvilEmpire, laughing all the way to the bank'
 const pumpLink = 'https://pump.fun/board'
 
 export default function Home() {
