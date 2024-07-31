@@ -63,18 +63,18 @@ export default function Home() {
 			<a
 				target="_blank"
 				href={pumpLink}
-				className="flex items-center justify-center gap-2 rounded-xl bg-black/75 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg backdrop-blur-sm"
+				className="flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-2 text-[12px] font-semibold tracking-tight text-black shadow-lg backdrop-blur-sm sm:text-[20px]"
 			>
 				Buy $colon{' '}
 				<span>
-					<Image className="w-6" src={pumppill} />
+					<Image className="w-4 md:w-6" src={pumppill} />
 				</span>
 			</a>
 
 			<a
 				target="_blank"
 				href="https://kabosu112.exblog.jp/9330818/"
-				className="pointer-cursor relative flex flex-col items-center justify-center rounded-xl bg-black/50 p-4 backdrop-blur-sm"
+				className="pointer-cursor relative mx-8 flex flex-col items-center justify-center rounded-xl bg-black/50 p-4 backdrop-blur-sm"
 			>
 				<h3 className="text-center italic">
 					"Hello everyone. My name is Colon.
