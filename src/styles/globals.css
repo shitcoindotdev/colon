@@ -33,3 +33,11 @@
 .shiba-inu-gradient {
 	background: linear-gradient(to bottom right, #e8d5b580, #00000080);
 }
+
+.gradient-text {
+	background: linear-gradient(to bottom right, #f5e5c0, #333333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}

@@ -30,9 +30,11 @@ export default function Home() {
 			<div className="relative w-full max-w-[900px] items-center justify-center">
 				<Image className="z-0 h-auto w-full" src={banner} />
 				<div className="absolute top-1/4 w-full">
-					<h1 className="text-center text-[40px] font-extrabold md:text-[80px]">$COLON</h1>
+					<h1 className="gradient-text text-center text-[40px] font-extrabold md:text-[80px]">$COLON</h1>
 					<Typewriter
-						className={'-mt-3 text-center text-[16px] font-bold italic md:-mt-4 md:text-[25px]'}
+						className={
+							'gradient-text -mt-3 text-center text-[16px] font-bold italic md:-mt-4 md:text-[25px]'
+						}
 						text={'The DogeFather'}
 						speed={69}
 					/>
@@ -52,8 +54,8 @@ export default function Home() {
 			</div>
 			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
-					Meet <span className="font-bold italic">Colon</span>, the DogeFather of the world famous shiba-inu{' '}
-					<span className="font-bold italic">Kabosu</span>, also known as{' '}
+					Meet <span className="font-bold italic">Colon</span>, he is a shiba-inu and the father of the world
+					famous <span className="font-bold italic">Kabosu</span>, also known as{' '}
 					<span className="font-bold italic">Doge</span>, the mascot of DogeCoin 🪙🐕
 				</p>
 			</div>
@@ -72,7 +74,7 @@ export default function Home() {
 			<a
 				target="_blank"
 				href="https://kabosu112.exblog.jp/9330818/"
-				className="pointer-cursor relative flex flex-col items-center justify-center rounded-xl bg-white/20 p-4 backdrop-blur-sm"
+				className="pointer-cursor relative flex flex-col items-center justify-center rounded-xl bg-black/50 p-4 backdrop-blur-sm"
 			>
 				<h3 className="text-center italic">
 					"Hello everyone. My name is Colon.
