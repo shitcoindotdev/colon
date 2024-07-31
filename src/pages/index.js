@@ -12,7 +12,7 @@ import colon4 from '/public/kabosusfather.jpg'
 import colon5 from '/public/colondog.jpg'
 import colon6 from '/public/webscreen.png'
 import dogefather from '/public/dogefather.webp'
-import dogefathermobile from '/public/dogefathermobile.webp'
+import dogefathermobile from '/public/mobiledogefather.webp'
 import pumppill from '/public/logo.webp'
 import Typewriter from '@/components/Typewriter'
 
@@ -23,9 +23,10 @@ const pumpLink = 'https://pump.fun/board'
 export default function Home() {
 	return (
 		<main
-			className={`relative flex min-h-screen w-full flex-col items-center overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 ${nunito.className}`}
+			className={`relative flex min-h-screen w-full flex-col items-center overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 md:gap-40 ${nunito.className}`}
 		>
-			<Image className="fixed z-[-2] h-auto w-full" src={dogefathermobile} />
+			<Image className="fixed z-[-2] h-auto w-full md:hidden" src={dogefathermobile} />
+			<Image className="fixed z-[-2] hidden h-auto w-full md:block" src={dogefather} />
 			<div className="gradient-bg fixed z-[-1] h-full w-full opacity-60"></div>
 			<section className="relative flex min-h-screen flex-col items-center gap-10">
 				<div className="relative w-full max-w-[900px] items-center justify-center">
