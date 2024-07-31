@@ -84,7 +84,10 @@ export default function Home() {
 				<Image className="mt-4 w-[400px] max-w-[69%] rounded-lg shadow-lg" src={colon4} />
 				<p className="absolute -bottom-1 text-[16px]">source</p>
 			</a>
-			<p className="pb-20 text-[16px] font-bold sm:text-[20px] lg:pb-28">Stay up to date with $COLON 🐕</p>
+			<p className="max-w-[90vw] text-wrap pb-20 text-center text-[12px] font-bold md:text-[14px] lg:pb-28">
+				© 2024 $COLON. All rights reserved. $COLON is a trademark of its owner. This project is for
+				entertainment purposes only and is not financial advice. 🐕
+			</p>
 			<Links
 				xLink={'#'}
 				DexsLink={'#'}
