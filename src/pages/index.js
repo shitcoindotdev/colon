@@ -11,8 +11,12 @@ import colon3 from '/public/kabosumouth.jpg'
 import colon4 from '/public/kabosusfather.jpg'
 import colon5 from '/public/colondog.jpg'
 import colon6 from '/public/webscreen.png'
+import pumppill from '/public/logo.webp'
+import Typewriter from '@/components/Typewriter'
 
 const nunito = Nunito({ subsets: ['latin'] })
+const contractAddress = 'dummyaddress'
+const pumpLink = 'https://pump.fun/board'
 
 export default function Home() {
 	return (
@@ -23,11 +27,15 @@ export default function Home() {
 				<Image className="z-0 h-auto w-full" src={banner} />
 				<div className="absolute top-1/4 w-full">
 					<h1 className="text-center text-[40px] font-extrabold md:text-[80px]">$COLON</h1>
-					<h2 className="-mt-3 text-center text-[16px] font-bold md:-mt-4 md:text-[25px]">Kabosu's Father</h2>
+					<Typewriter
+						className={'-mt-3 text-center text-[16px] font-bold italic md:-mt-4 md:text-[25px]'}
+						text={'The DogeFather'}
+						speed={42}
+					/>
 				</div>
 			</div>
 
-			<div className="relative z-10 flex w-full justify-evenly sm:justify-center sm:gap-6">
+			<div className="fadeInUp relative z-10 flex w-full justify-evenly sm:justify-center sm:gap-6">
 				<div className="w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
 					<Image className="rotating-element h-full rounded-xl shadow-xl" src={colon5} />
 				</div>
@@ -39,15 +47,22 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
-				<p>Colon is the dogefather of the world famous shiba-inu Kabosu, also known as Doge</p>
+				<p>
+					Meet <span className="font-bold italic">Colon</span>, the father of the world famous shiba-inu{' '}
+					<span className="font-bold italic">Kabosu</span>, also known as{' '}
+					<span className="font-bold italic">Doge</span>, the mascot of DogeCoin 🪙🐕
+				</p>
 			</div>
-			<Copyaddress contractAddress={'0x7A55d2222d9138018FfDAd69FFc3eBdB1c22dbAb'} />
+			<Copyaddress contractAddress={contractAddress} />
 			<a
 				target="_blank"
-				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x7A55d2222d9138018FfDAd69FFc3eBdB1c22dbAb"
-				className="rounded-xl bg-[#A56E3A] px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg"
+				href={pumpLink}
+				className="flex items-center justify-center gap-2 rounded-xl bg-[#A56E3A]/50 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg backdrop-blur-sm"
 			>
-				Buy $colon some treats! 🦴
+				Buy $colon{' '}
+				<span>
+					<Image className="w-6" src={pumppill} />
+				</span>
 			</a>
 
 			<a
@@ -55,19 +70,21 @@ export default function Home() {
 				href="https://kabosu112.exblog.jp/9330818/"
 				className="pointer-cursor flex flex-col items-center justify-center rounded-xl bg-white/20 p-4"
 			>
-				<h3 className="text-center">
+				<h3 className="text-center italic">
 					"Hello everyone. My name is Colon.
 					<br />
-					Today, I'm here to teach my daughter, Kabosu, how to walk properly.""
+					Today, I'm here to teach my daughter, Kabosu, how to walk properly."
 				</h3>
 				<Image className="mt-4 w-[400px] max-w-[69%] rounded-lg shadow-lg" src={colon4} />
 			</a>
-			<p className="text-[16px] font-semibold sm:text-[20px]">Stay up to date with $COLON 🐕</p>
-			<Links />
-			{/* <div className="flex flex-col items-center gap-2">
-				<p className="text-2xl font-bold text-white">onigiri.sol</p>
-				<p className="text-xs text-white">CawA7rHFU1RarXiNpVr3TXLn5dYsjLLL9oFSeaNkjLHU</p>
-			</div> */}
+			<p className="pb-20 text-[16px] font-semibold sm:text-[20px]">Stay up to date with $COLON 🐕</p>
+			<Links
+				xLink={'#'}
+				DexsLink={'#'}
+				DextLink={'#'}
+				TgLink={'#'}
+				className={'fixed bottom-4 z-20 rounded-full bg-white/50 px-4 py-2 backdrop-blur-sm md:mx-auto'}
+			/>
 		</main>
 	)
 }

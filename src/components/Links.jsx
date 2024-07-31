@@ -1,17 +1,23 @@
 import Image from 'next/image'
 
-function Links({ className }) {
+function Links({ className, xLink, TgLink, DexsLink, DextLink }) {
 	return (
 		<ul className={`flex items-center justify-center gap-4 sm:gap-8 xl:flex-row xl:gap-10 ${className}`}>
 			<li className="">
-				<a target="_blank" href="https://x.com/kabosusfather">
-					<Image className="h-[77px] w-[auto]" src="/xlogo.svg" height={0} width={0} alt="twitter logo" />
+				<a target="_blank" href={xLink}>
+					<Image
+						className="h-[42px] w-[auto] lg:h-[60px]"
+						src="/xlogo.svg"
+						height={0}
+						width={0}
+						alt="twitter logo"
+					/>
 				</a>
 			</li>
 			<li className="">
-				<a target="_blank" href="https://t.me/coloneth">
+				<a target="_blank" href={TgLink}>
 					<Image
-						className="h-[77px] w-[auto]"
+						className="h-[42px] w-[auto] lg:h-[60px]"
 						src="/telegramlogo.svg"
 						height={0}
 						width={0}
@@ -19,10 +25,10 @@ function Links({ className }) {
 					/>
 				</a>
 			</li>
-			<li className="flex h-[77px] w-[77px] items-center justify-center rounded-full bg-[#A56E3A]">
-				<a target="_blank" href="https://dexscreener.com/ethereum/0x9cd2dd750807362ce96e7b98b9e1d09f29520dcd">
+			<li className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-[#A56E3A] lg:h-[60px] lg:w-[60px]">
+				<a target="_blank" href={DexsLink}>
 					<svg
-						className="h-auto w-[50px] sm:h-14 lg:h-20"
+						className="h-auto w-[20px] sm:h-14 lg:w-[32px]"
 						xmlns="http://www.w3.org/2000/svg"
 						width="0"
 						height="0"
@@ -37,12 +43,9 @@ function Links({ className }) {
 				</a>
 			</li>
 			<li className="">
-				<a
-					target="_blank"
-					href="https://www.dextools.io/app/en/ether/pair-explorer/0xb2b4554acf93731d6008990f5034e1f1647ae49f?t=1722433474353"
-				>
+				<a target="_blank" href={DextLink}>
 					<Image
-						className="h-[77px] w-auto"
+						className="h-[42px] w-auto lg:h-[60px]"
 						src="/dextoolslogo.svg"
 						width={0}
 						height={0}
