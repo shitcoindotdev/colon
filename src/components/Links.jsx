@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function Links({ className, xLink, TgLink, DexsLink, DextLink }) {
+function Links({ className, xLink, TgLink, DexsLink, DextLink, pumpLink }) {
 	return (
 		<ul className={`flex items-center justify-center gap-4 sm:gap-8 xl:flex-row xl:gap-10 ${className}`}>
 			<li className="">
@@ -25,8 +25,27 @@ function Links({ className, xLink, TgLink, DexsLink, DextLink }) {
 					/>
 				</a>
 			</li>
-			<li className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-black lg:h-[60px] lg:w-[60px]">
-				<a target="_blank" href={DexsLink}>
+			<li className="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-full bg-black lg:h-[60px] lg:w-[60px]">
+				<a
+					className="flex h-full w-full items-center justify-center rounded-full"
+					target="_blank"
+					href={pumpLink}
+				>
+					<Image
+						className="h-auto w-[20px] lg:w-[40px]"
+						src="/logo.webp"
+						height={0}
+						width={100}
+						alt="twitter logo"
+					/>
+				</a>
+			</li>
+			<li className="flex h-[42px] w-[42px] cursor-pointer items-center justify-center rounded-full bg-black lg:h-[60px] lg:w-[60px]">
+				<a
+					target="_blank"
+					className="flex h-full w-full items-center justify-center rounded-full"
+					href={DexsLink}
+				>
 					<svg
 						className="h-auto w-[20px] sm:h-14 lg:w-[32px]"
 						xmlns="http://www.w3.org/2000/svg"
