@@ -47,7 +47,7 @@ const AudioPlayer = ({ src }) => {
 					background: 'rgba(0, 0, 0, 0.5)',
 					border: 'none',
 					color: 'white',
-					padding: '10px',
+					padding: '6px',
 					cursor: 'pointer',
 				}}
 			>
