@@ -42,9 +42,9 @@ const AudioPlayer = ({ src }) => {
 			</audio>
 			<button
 				onClick={togglePlay}
-				className="shaking-element rounded-xl px-4 py-2 text-[16px] font-bold"
+				className="shaking-element rounded-xl px-4 py-2 text-[16px] font-bold backdrop-blur-sm"
 				style={{
-					background: 'rgba(255, 255, 255, 0.95)',
+					background: 'rgba(255, 255, 255, 0.85)',
 					border: 'none',
 					cursor: 'pointer',
 				}}
