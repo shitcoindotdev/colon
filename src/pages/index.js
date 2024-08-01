@@ -63,7 +63,11 @@ export default function Home() {
 					</p>
 				</div>
 				<Copyaddress contractAddress={contractAddress} />
-				<Typewriter className={'-mt-9 text-[14px] md:-mt-8'} text={'click me to copy the CA'} />
+				<Typewriter
+					speed={69}
+					className={'-mt-9 text-[14px] font-bold md:-mt-8 md:text-[16px]'}
+					text={'click me to copy the CA'}
+				/>
 				<a
 					target="_blank"
 					href={pumpLink}
