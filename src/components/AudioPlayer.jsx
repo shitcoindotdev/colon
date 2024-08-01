@@ -3,21 +3,35 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const AudioPlayer = ({ src }) => {
 	const audioRef = useRef(null)
-	const [isMuted, setIsMuted] = useState(false)
+	const [isPlaying, setIsPlaying] = useState(false)
 
 	useEffect(() => {
-		if (audioRef.current) {
+		const handleScroll = () => {
+			if (!isPlaying) {
+				setIsPlaying(true)
+			}
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [isPlaying])
+
+	useEffect(() => {
+		if (isPlaying) {
 			audioRef.current.play().catch((error) => {
 				console.error('Audio play failed:', error)
+				setIsPlaying(false)
 			})
+		} else {
+			audioRef.current.pause()
 		}
-	}, [])
+	}, [isPlaying])
 
-	const toggleMute = () => {
-		if (audioRef.current) {
-			audioRef.current.muted = !isMuted
-			setIsMuted(!isMuted)
-		}
+	const togglePlay = () => {
+		setIsPlaying(!isPlaying)
 	}
 
 	return (
@@ -27,13 +41,17 @@ const AudioPlayer = ({ src }) => {
 				Your browser does not support the audio element.
 			</audio>
 			<button
-				onClick={toggleMute}
-				className="gradient-text"
+				onClick={togglePlay}
 				style={{
+					background: 'rgba(0, 0, 0, 0.5)',
+					border: 'none',
+					borderRadius: '5px',
+					color: 'white',
+					padding: '10px',
 					cursor: 'pointer',
 				}}
 			>
-				{isMuted ? 'Unmute' : 'Mute'}
+				{isPlaying ? 'Pause' : 'Play'}
 			</button>
 		</div>
 	)
