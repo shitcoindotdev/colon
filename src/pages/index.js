@@ -42,14 +42,14 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="fadeInUp relative z-10 flex w-full justify-evenly sm:justify-center sm:gap-6">
-					<div className="w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
+				<div className="relative z-10 flex w-full justify-evenly sm:justify-center sm:gap-6">
+					<div className="fadeIn w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
 						<Image className="rotating-element h-full rounded-xl shadow-xl" src={colon5} />
 					</div>
-					<div className="w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
+					<div className="fadeIn w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
 						<Image className="rotating-element h-full rounded-xl shadow-xl" src={colon2} />
 					</div>
-					<div className="w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
+					<div className="fadeIn w-[120px] rounded-xl sm:w-[150px] md:w-[300px]">
 						<Image className="rotating-element h-full rounded-xl shadow-xl" src={colonface} />
 					</div>
 				</div>
@@ -97,7 +97,7 @@ export default function Home() {
 				DextLink={'#'}
 				TgLink={'#'}
 				className={
-					'shiba-inu-gradient fixed bottom-4 z-20 rounded-full px-4 py-2 shadow-md backdrop-blur-sm md:mx-auto'
+					'shiba-inu-gradient fadeInUp fixed bottom-4 z-20 rounded-full px-4 py-2 shadow-md backdrop-blur-sm md:mx-auto'
 				}
 			/>
 		</main>
