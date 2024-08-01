@@ -10,21 +10,11 @@
 
 .fadeIn {
 	opacity: 0; /* Start hidden */
-	animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+	animation: fadeInUp2 0.42s ease-in-out forwards; /* Apply fade-in animation */
 }
 
 .rotating-element:hover {
 	transform: rotate(10deg) scale(1.1); /* Rotate 10 degrees on hover */
-}
-
-/* New Keyframes for Fade-In Animation */
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }
 
 /* Staggered Animation Delays */
@@ -33,15 +23,15 @@
 }
 
 .fadeIn:nth-child(2) {
-	animation-delay: 75ms; /* 50ms delay for the second element */
+	animation-delay: 42ms; /* 50ms delay for the second element */
 }
 
 .fadeIn:nth-child(3) {
-	animation-delay: 150ms; /* 100ms delay for the third element */
+	animation-delay: 84ms; /* 100ms delay for the third element */
 }
 
 .fadeInUp {
-	animation: fadeInUp 0.69s ease-in-out forwards;
+	animation: fadeInUp 420ms ease-in-out forwards;
 }
 
 .gradient-bg {
@@ -52,6 +42,17 @@
 	from {
 		opacity: 0;
 		transform: translateY(60px); /* Starts 20px below its normal position */
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0); /* Ends at its normal position */
+	}
+}
+
+@keyframes fadeInUp2 {
+	from {
+		opacity: 0;
+		transform: translateY(12px); /* Starts 20px below its normal position */
 	}
 	to {
 		opacity: 1;
