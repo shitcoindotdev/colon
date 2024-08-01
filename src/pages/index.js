@@ -40,6 +40,7 @@ export default function Home() {
 							}
 							text={'The DogeFather'}
 							speed={69}
+							delay={1}
 						/>
 					</div>
 				</div>
@@ -64,9 +65,10 @@ export default function Home() {
 				</div>
 				<Copyaddress contractAddress={contractAddress} />
 				<Typewriter
-					speed={69}
+					speed={50}
+					delay={3000}
 					className={'-mt-9 text-[14px] font-bold md:-mt-8 md:text-[16px]'}
-					text={'click me to copy the CA'}
+					text={'click ⬆ to copy the CA'}
 				/>
 				<a
 					target="_blank"

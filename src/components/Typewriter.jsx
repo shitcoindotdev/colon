@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from 'react'
 
-const Typewriter = ({ text, speed, className }) => {
+const Typewriter = ({ text, speed, className, delay = 0 }) => {
 	const [displayedText, setDisplayedText] = useState('')
 	const [index, setIndex] = useState(0)
+	const [startTyping, setStartTyping] = useState(false)
 
 	useEffect(() => {
-		if (index < text.length) {
-			const timeoutId = setTimeout(() => {
+		let timeoutId
+
+		if (delay > 0 && !startTyping) {
+			// Initial delay before starting the typewriter effect
+			timeoutId = setTimeout(() => {
+				setStartTyping(true)
+			}, delay)
+		} else if (index < text.length && startTyping) {
+			// Typewriter effect logic
+			timeoutId = setTimeout(() => {
 				setDisplayedText((prev) => prev + text[index])
 				setIndex((prevIndex) => prevIndex + 1)
-			}, speed) // Delay between each character, adjust as needed
-
-			return () => clearTimeout(timeoutId)
+			}, speed)
 		}
-	}, [index, text])
+
+		return () => clearTimeout(timeoutId)
+	}, [index, text, delay, speed, startTyping])
 
 	return <div className={className}>{displayedText}</div>
 }
