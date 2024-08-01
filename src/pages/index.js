@@ -66,9 +66,9 @@ export default function Home() {
 				<a
 					target="_blank"
 					href={pumpLink}
-					className="flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-2 text-[12px] font-semibold tracking-tight text-black shadow-lg backdrop-blur-sm sm:text-[20px]"
+					className="flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-2 text-[12px] font-semibold tracking-tight shadow-lg backdrop-blur-sm sm:text-[20px]"
 				>
-					Buy $colon{' '}
+					<span className="gradient-text">Buy $colon</span>{' '}
 					<span>
 						<Image className="w-4 md:w-6" src={pumppill} />
 					</span>
