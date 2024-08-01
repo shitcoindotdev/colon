@@ -47,6 +47,7 @@ const AudioPlayer = ({ src }) => {
 					background: 'rgba(255, 255, 255, 0.85)',
 					border: 'none',
 					cursor: 'pointer',
+					animationDelay: '200ms',
 				}}
 			>
 				<span className="gradient-text">{isPlaying ? 'Pause' : 'Play'}</span>
