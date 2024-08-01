@@ -87,12 +87,12 @@
 	50%,
 	70%,
 	90% {
-		transform: translate(-5px, -2px);
+		transform: translate(-2px, -2px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translate(5px, 2px);
+		transform: translate(2px, 2px);
 	}
 }
