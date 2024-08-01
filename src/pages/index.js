@@ -16,6 +16,7 @@ import pumppill from '/public/logo.webp'
 import Typewriter from '@/components/Typewriter'
 import AudioPlayer from '@/components/AudioPlayer'
 import memesound from '/public/memesound.mp3'
+import InfoCard from '@/components/InfoCard'
 
 const nunito = Nunito({ subsets: ['latin'] })
 const contractAddress = 'EvilEmpire, laughing all the way to the bank'
@@ -95,6 +96,39 @@ export default function Home() {
 					<Image className="mt-4 w-[400px] max-w-[69%] rounded-lg shadow-lg" src={colon4} />
 					<p className="absolute -bottom-1 text-[16px]">source</p>
 				</a>
+				<div className="flex flex-col gap-4">
+					<InfoCard
+						title={'Narrative?'}
+						content={
+							'Colon is the DogeFather of Solana. As the biological father of the "Doge" dog, Kabosu, he claims his rightful name as the Dogefather.'
+						}
+						className={'bg-black/80 backdrop-blur-sm'}
+					/>
+					<InfoCard
+						title={'Who is Colon? 🐕'}
+						content={
+							'Colon is a Shiba-Inu dog and the father of the internet star Kabosu, bettern known as Doge from the dogecoin logo'
+						}
+						className={'bg-black/80 backdrop-blur-sm'}
+					/>
+					<InfoCard
+						title={'How to buy?'}
+						content={
+							'$COLON is a solana token. To buy it you need a wallet that is able to store Solana like Phantom Wallet and some Solana. The easiest way to buy it is by clicking the Pumpfun Link in our fixed navigation bar (the one with the white/green pill icon)'
+						}
+						className={'bg-black/80 backdrop-blur-sm'}
+					/>
+					<InfoCard
+						title={'What is the total supply?'}
+						content={'There are initially 1,000,000,000 tokens, as is standard with Pump.fun launches'}
+						className={'bg-black/80 backdrop-blur-sm'}
+					/>
+					<InfoCard
+						title={'Target?'}
+						content={'Millions. Billions. WOOF WOOF'}
+						className={'bg-black/80 backdrop-blur-sm'}
+					/>
+				</div>
 				<p className="mt-auto max-w-[90vw] text-wrap pb-20 text-center text-[12px] font-bold md:text-[14px] lg:pb-28">
 					© 2024 $COLON. All rights reserved. $COLON is a trademark of its owner. This project is for
 					entertainment purposes only and is not financial advice. 🐕
@@ -105,6 +139,7 @@ export default function Home() {
 				DexsLink={'#'}
 				DextLink={'#'}
 				TgLink={'#'}
+				pumpLink={'https://pump.fun/board'}
 				className={
 					'shiba-inu-gradient fadeInUp fixed bottom-4 z-20 rounded-full px-4 py-2 shadow-md backdrop-blur-sm md:mx-auto'
 				}
