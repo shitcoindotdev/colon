@@ -42,10 +42,10 @@ const AudioPlayer = ({ src }) => {
 			</audio>
 			<button
 				onClick={togglePlay}
+				className="rounded-xl text-[16px]"
 				style={{
 					background: 'rgba(0, 0, 0, 0.5)',
 					border: 'none',
-					borderRadius: '5px',
 					color: 'white',
 					padding: '10px',
 					cursor: 'pointer',
