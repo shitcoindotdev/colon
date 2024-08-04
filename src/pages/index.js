@@ -20,7 +20,7 @@ import InfoCard from '@/components/InfoCard'
 import { ExternalLink } from 'lucide-react'
 
 const nunito = Nunito({ subsets: ['latin'] })
-const contractAddress = 'EvilEmpire, laughing all the way to the bank'
+const contractAddress = 'CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
 const pumpLink = 'https://pump.fun/CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
 const xLink = 'https://x.com/ColonDogeFather'
 const dexsLink = '#'
