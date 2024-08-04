@@ -21,16 +21,16 @@ import { ExternalLink } from 'lucide-react'
 
 const nunito = Nunito({ subsets: ['latin'] })
 const contractAddress = 'EvilEmpire, laughing all the way to the bank'
-const pumpLink = 'https://pump.fun/board'
-const xLink = '#'
+const pumpLink = 'https://pump.fun/CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
+const xLink = 'https://x.com/ColonDogeFather'
 const dexsLink = '#'
 const dextLink = '#'
-const tgLink = '#'
+const tgLink = 'https://t.me/ColonSol'
 
 export default function Home() {
 	return (
 		<main
-			className={`relative flex min-h-screen w-full flex-col items-center overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 md:gap-40 ${nunito.className}`}
+			className={`relative flex min-h-screen w-full flex-col items-center overflow-y-auto overflow-x-hidden text-[20px] font-semibold text-white sm:px-8 md:gap-20 ${nunito.className}`}
 		>
 			<Image className="fixed z-[-2] h-screen md:hidden" src={dogefathermobile} />
 			<Image className="fixed z-[-2] hidden h-auto w-full md:block" src={dogefather} />
@@ -94,6 +94,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="relative flex min-h-screen flex-col items-center gap-10">
+				<h2 className="gradient-text text-[36px] md:text-[60px]">The Dogefather</h2>
 				<a
 					target="_blank"
 					href="https://kabosu112.exblog.jp/9330818/"
