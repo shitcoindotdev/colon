@@ -17,10 +17,15 @@ import Typewriter from '@/components/Typewriter'
 import AudioPlayer from '@/components/AudioPlayer'
 import memesound from '/public/memesound.mp3'
 import InfoCard from '@/components/InfoCard'
+import { ExternalLink } from 'lucide-react'
 
 const nunito = Nunito({ subsets: ['latin'] })
 const contractAddress = 'EvilEmpire, laughing all the way to the bank'
 const pumpLink = 'https://pump.fun/board'
+const xLink = '#'
+const dexsLink = '#'
+const dextLink = '#'
+const tgLink = '#'
 
 export default function Home() {
 	return (
@@ -58,43 +63,50 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
-					<p>
-						Meet <span className="font-bold italic">Colon</span>, he is a shiba-inu and the father of the
-						world famous <span className="font-bold italic">Kabosu</span>, also known as{' '}
+					<p className="fadeIn">
+						Meet <span className="font-bold italic">Colon</span>, he is the father of the worlds most famous
+						shiba-inu:&nbsp;<span className="font-bold italic">Kabosu</span>, also known as{' '}
 						<span className="font-bold italic">Doge</span>, the mascot of DogeCoin 🪙🐕
 					</p>
 				</div>
-				<Copyaddress contractAddress={contractAddress} />
-				<Typewriter
-					speed={50}
-					delay={3000}
-					className={'-mt-9 text-[14px] font-bold md:-mt-8 md:text-[16px]'}
-					text={'click ⬆ to copy the CA'}
-				/>
-				<a
-					target="_blank"
-					href={pumpLink}
-					className="shaking-element flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-2 text-[12px] font-semibold tracking-tight shadow-lg backdrop-blur-sm sm:text-[20px]"
-				>
-					<span className="gradient-text">Buy $colon</span>{' '}
-					<span>
-						<Image className="w-4 md:w-6" src={pumppill} />
-					</span>
-				</a>
+				<div className="fadeIn relative flex w-full justify-center py-4">
+					<Copyaddress contractAddress={contractAddress} />
+					<Typewriter
+						speed={50}
+						delay={1500}
+						className={
+							'opacity-8 absolute -bottom-2 text-[12px] font-bold md:-bottom-4 md:text-[14px] md:text-[16px]'
+						}
+						text={'click to copy CA'}
+					/>
+				</div>
+				<div className="fadeIn">
+					<a
+						target="_blank"
+						href={pumpLink}
+						className="shaking-element flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-2 text-[12px] font-semibold tracking-tight shadow-lg backdrop-blur-sm sm:text-[20px]"
+					>
+						<span className="gradient-text">Buy $colon</span>{' '}
+						<span>
+							<Image className="w-4 md:w-6" src={pumppill} />
+						</span>
+					</a>
+				</div>
 			</section>
 			<section className="relative flex min-h-screen flex-col items-center gap-10">
 				<a
 					target="_blank"
 					href="https://kabosu112.exblog.jp/9330818/"
-					className="pointer-cursor relative mx-8 flex flex-col items-center justify-center rounded-xl bg-black/50 p-4 backdrop-blur-sm"
+					className="pointer-cursor peer relative mx-8 flex flex-col items-center justify-center rounded-xl bg-black/50 p-4 backdrop-blur-sm md:flex-row-reverse"
 				>
-					<h3 className="text-center italic">
+					<div className="peer absolute h-full w-full"></div>
+					<ExternalLink className="absolute right-2 top-2 opacity-80 transition duration-200 ease-in-out hover:opacity-100 peer-hover:opacity-100" />
+					<h3 className="text-center italic md:max-w-[400px]">
 						"Hello everyone. My name is Colon.
 						<br />
 						Today, I'm here to teach my daughter, Kabosu, how to walk properly."
 					</h3>
-					<Image className="mt-4 w-[400px] max-w-[69%] rounded-lg shadow-lg" src={colon4} />
-					<p className="absolute -bottom-1 text-[16px]">source</p>
+					<Image className="mt-4 w-full rounded-lg shadow-lg md:max-w-[400px]" src={colon4} />
 				</a>
 				<div className="flex flex-col gap-4">
 					<InfoCard
@@ -102,31 +114,31 @@ export default function Home() {
 						content={
 							'Colon is the DogeFather of Solana. As the biological father of the "Doge" dog, Kabosu, he claims his rightful name as the Dogefather.'
 						}
-						className={'bg-black/80 backdrop-blur-sm'}
+						className={'bg-black/80 text-white/80 backdrop-blur-sm'}
 					/>
 					<InfoCard
 						title={'Who is Colon? 🐕'}
 						content={
 							'Colon is a Shiba-Inu dog and the father of the internet star Kabosu, bettern known as Doge from the dogecoin logo'
 						}
-						className={'bg-black/80 backdrop-blur-sm'}
+						className={'bg-black/80 text-white/80 backdrop-blur-sm'}
 					/>
 					<InfoCard
 						title={'How to buy?'}
 						content={
-							'$COLON is a solana token. To buy it you need a wallet that is able to store Solana like Phantom Wallet and some Solana. The easiest way to buy it is by clicking the Pumpfun Link in our fixed navigation bar (the one with the white/green pill icon)'
+							'$COLON is a solana token. To buy $colon you need a solana wallet like phantom wallet and some solana.'
 						}
-						className={'bg-black/80 backdrop-blur-sm'}
+						className={'bg-black/80 text-white/80 backdrop-blur-sm'}
 					/>
 					<InfoCard
 						title={'What is the total supply?'}
 						content={'There are initially 1,000,000,000 tokens, as is standard with Pump.fun launches'}
-						className={'bg-black/80 backdrop-blur-sm'}
+						className={'bg-black/80 text-white/80 backdrop-blur-sm'}
 					/>
 					<InfoCard
 						title={'Target?'}
-						content={'Millions. Billions. WOOF WOOF'}
-						className={'bg-black/80 backdrop-blur-sm'}
+						content={'The DogeFather demands Millions. Billions. WOOF WOOF'}
+						className={'bg-black/80 text-white/80 backdrop-blur-sm'}
 					/>
 				</div>
 				<p className="mt-auto max-w-[90vw] text-wrap pb-20 text-center text-[12px] font-bold md:text-[14px] lg:pb-28">
@@ -135,11 +147,10 @@ export default function Home() {
 				</p>
 			</section>
 			<Links
-				xLink={'#'}
-				DexsLink={'#'}
-				DextLink={'#'}
-				TgLink={'#'}
-				pumpLink={'https://pump.fun/board'}
+				xLink={xLink}
+				DexsLink={dexsLink}
+				DextLink={dextLink}
+				TgLink={tgLink}
 				className={
 					'shiba-inu-gradient fadeInUp fixed bottom-4 z-20 rounded-full px-4 py-2 shadow-md backdrop-blur-sm md:mx-auto'
 				}

@@ -50,7 +50,7 @@ const AudioPlayer = ({ src }) => {
 					animationDelay: '200ms',
 				}}
 			>
-				<span className="gradient-text">{isPlaying ? 'Pause' : 'Play'}</span>
+				<span className="gradient-text text-[12px]">{isPlaying ? 'Pause' : 'Play'}</span>
 			</button>
 		</div>
 	)

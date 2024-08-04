@@ -92,12 +92,12 @@ details summary::-webkit-details-marker {
 	50%,
 	70%,
 	90% {
-		transform: translate(-2px, -2px);
+		transform: translate(-1px, -1px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translate(2px, 2px);
+		transform: translate(1px, 1px);
 	}
 }
