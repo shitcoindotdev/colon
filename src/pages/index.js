@@ -23,8 +23,9 @@ const nunito = Nunito({ subsets: ['latin'] })
 const contractAddress = 'CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
 const pumpLink = 'https://pump.fun/CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
 const xLink = 'https://x.com/ColonDogeFather'
-const dexsLink = '#'
-const dextLink = '#'
+const dexsLink = 'https://dexscreener.com/solana/CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
+const dextLink =
+	'https://www.dextools.io/app/en/solana/pair-explorer/https://dexscreener.com/solana/CKSvUasQjnUfuNYVzTs3u34JmMgyoQ7SACjRBscQpump'
 const tgLink = 'https://t.me/ColonSol'
 
 export default function Home() {
